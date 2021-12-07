@@ -10,17 +10,15 @@ public class Transaction {
     private String transactionId;
 
     private String status;
-    private String travelClass;
     private String paymentVia;
     private Double amount;
 
     public Transaction() {
     }
 
-    public Transaction(String transactionId, String status, String travelClass, String paymentVia, Double amount) {
+    public Transaction(String transactionId, String status, String paymentVia, Double amount) {
         this.transactionId = transactionId;
         this.status = status;
-        this.travelClass = travelClass;
         this.paymentVia = paymentVia;
         this.amount = amount;
     }
@@ -39,14 +37,6 @@ public class Transaction {
 
     public void setStatus(String status) {
         this.status = status;
-    }
-
-    public String getTravelClass() {
-        return travelClass;
-    }
-
-    public void setTravelClass(String travelClass) {
-        this.travelClass = travelClass;
     }
 
     public String getPaymentVia() {
